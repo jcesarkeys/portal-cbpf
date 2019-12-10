@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+	<name>EASYGOOGLEANALYTICS</name>
+	<author>Michael Gilkes (Valor Apps)</author>
+	<creationDate>February 2012</creationDate>
+	<copyright>Copyright (C) 2011-2015 Michael Albert Gilkes. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2</license>
+	<authorEmail>michael@valorapps.com</authorEmail>
+	<authorUrl>https://www.valorapps.com</authorUrl>
+	<version>3.2</version>
+	<description>PLG_EGA_DESCRIPTION</description>
+	<help url="PLG_EGA_DOCUMENTATION" />
+	<files>
+		<filename plugin="easygoogleanalytics">easygoogleanalytics.php</filename>
+		<folder>elements</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_easygoogleanalytics.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_easygoogleanalytics.sys.ini</language>
+		<language tag="en-US">en-US/en-US.plg_system_easygoogleanalytics.ini</language>
+		<language tag="en-US">en-US/en-US.plg_system_easygoogleanalytics.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_easygoogleanalytics.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_easygoogleanalytics.sys.ini</language>
+	</languages>
+	
+	<!--<scriptfile>script.php</scriptfile>-->
+
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/easygoogleanalytics/elements">
+			<fieldset name="basic">
+				<field name="ega_profileid" type="text" default="UA-XXXXX-X" label="PLG_EGA_PROFILE_LABEL" description="PLG_EGA_PROFILE_DESC" />
+				<field name="ega_tracking" type="list" default="universal" label="PLG_EGA_TRACKING_LABEL" description="PLG_EGA_TRACKING_DESC" >
+					<option value="single">PLG_EGA_SINGLE_VALUE</option>
+					<option value="subdomains">PLG_EGA_SUBDOMAINS_VALUE</option>
+					<option value="tld">PLG_EGA_TLD_VALUE</option>
+					<option value="universal">PLG_EGA_UNIVERSAL_VALUE</option>
+				</field>
+				<field name="ega_spacer_sub" type="spacer" label="PLG_EGA_SUBDOMAINS_SPACER" />
+				<field name="ega_hostname" type="easydomaintext" default="" label="PLG_EGA_HOSTNAME_LABEL" description="PLG_EGA_HOSTNAME_DESC" />
+				<field name="ega_admin" type="list" default="1" label="PLG_EGA_ADMIN_LABEL" description="PLG_EGA_ADMIN_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="ega_spacer_track" type="spacer" label="PLG_EGA_TRACKING_SPACER" />
+				<field name="ega_track" type="list" default="0" label="PLG_EGA_TRACK_LABEL" description="PLG_EGA_TRACK_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="ega_jscript" type="list" default="mootools" label="PLG_EGA_JSCRIPT_LABEL" description="PLG_EGA_JSCRIPT_DESC" >
+					<option value="mootools">PLG_EGA_MOOTOOLS_VALUE</option>
+					<option value="jquery">PLG_EGA_JQUERY_VALUE</option>
+				</field>
+				<field name="ega_category" type="text" default="Outbound Links" label="PLG_EGA_CATEGORY_LABEL" description="PLG_EGA_CATEGORY_DESC" />
+				<field name="ega_skiplinks" type="text" default="youtube|youtu.be" label="PLG_EGA_SKIPLINKS_LABEL" description="PLG_EGA_SKIPLINKS_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

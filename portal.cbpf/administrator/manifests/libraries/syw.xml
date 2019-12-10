@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="library" method="upgrade">
+	<name>SimplifyYourWeb Extensions Library</name>
+	<libraryname>syw</libraryname>
+	<author>Olivier Buisard</author>
+	<creationDate>02/06/2016</creationDate>
+	<copyright>Copyright (C) 2011 Simplify Your Web. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<authorEmail>olivier.buisard@simplifyyourweb.com</authorEmail>
+	<authorUrl>www.simplifyyourweb.com</authorUrl>
+	<version>1.4.2</version>
+	<description><![CDATA[<p><img src='../libraries/syw/images/logo.png' style='float: none' /><br /><br />version 1.4.2<br /><br />Olivier Buisard @ <a href='http://www.simplifyyourweb.com' target='_blank'>Simplify Your Web</a></p>]]></description>
+	<packager>SimplifyYourWeb</packager>
+	<packagerurl>http://www.simplifyyourweb.com</packagerurl>
+	<media folder="media" destination="syw">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>		
+	</media>
+	<files>
+		<filename>cache.php</filename>
+		<filename>fonts.php</filename>
+		<filename>headerfilescache.php</filename>
+		<filename>image.php</filename>
+		<filename>index.html</filename>
+		<filename>k2.php</filename>
+		<filename>libraries.php</filename>
+		<filename>stylesheets.php</filename>
+		<filename>tags.php</filename>
+		<filename>text.php</filename>
+		<filename>utilities.php</filename>
+		<filename>version.php</filename>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>vendor</folder>
+	</files>
+	<languages>		
+		<language tag="cs-CZ">language/cs-CZ/cs-CZ.lib_syw.sys.ini</language>
+		<language tag="da-DK">language/da-DK/da-DK.lib_syw.sys.ini</language>
+		<language tag="de-DE">language/de-DE/de-DE.lib_syw.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.lib_syw.sys.ini</language>
+		<language tag="en-US">language/en-US/en-US.lib_syw.sys.ini</language>
+		<language tag="es-ES">language/es-ES/es-ES.lib_syw.sys.ini</language>
+		<language tag="fa-IR">language/fa-IR/fa-IR.lib_syw.sys.ini</language>
+		<language tag="fi-FI">language/fi-FI/fi-FI.lib_syw.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.lib_syw.sys.ini</language>
+		<language tag="it-IT">language/it-IT/it-IT.lib_syw.sys.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.lib_syw.sys.ini</language>
+		<language tag="pt-BR">language/pt-BR/pt-BR.lib_syw.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.lib_syw.sys.ini</language>
+		<language tag="sl-SI">language/sl-SI/sl-SI.lib_syw.sys.ini</language>
+		<language tag="tr-TR">language/tr-TR/tr-TR.lib_syw.sys.ini</language>
+	</languages>	
+	<updateservers>
+		<server type="extension" priority="1" name="SimplifyYourWeb Extension Library auto updater">http://www.barejoomlatemplates.com/autoupdates/sywlibrary/sywlibrary-update.xml</server>
+	</updateservers>
+</extension>
